@@ -33,5 +33,5 @@
 - spring boot + (JPA or MyBatis)
 - mariaDB or mySql
 
-### 참고 : 
+### 참고자료 : 
 https://bootstrapthemes.co/items/free-bootstrap-templates/page/3/
