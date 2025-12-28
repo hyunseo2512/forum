@@ -32,8 +32,8 @@
 
 ### 스택 : 
 - figma, git
-- spring boot + (JPA or MyBatis)
-- mariaDB or mySql
+- spring boot + JPA 
+- mySql
 
 ### 참고자료 : 
 * https://bootstrapthemes.co/items/free-bootstrap-templates/
@@ -56,3 +56,16 @@ www.community.demo
     ├── login
     └── signup
 </pre>
+
+
+## 라이브러리
+
+Spring Boot Devtools
+Lombok
+Spring Configuration Processor
+Spring Web
+Thymeleaf
+MySql Driver
+Spring Data JPA
+log4jdbc
+thymeleaf-layout
