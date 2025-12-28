@@ -1,7 +1,5 @@
-# WEB PROJECT 
+# WEB PROJECT [Open Source]
 ---
-
-### [Open Source Project]
      
 **사이트 주제** :
 
