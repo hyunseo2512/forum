@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{layout/layout}">
+
+<div layout:fragment="content" class="container-md" th:with="board = ${boardDTO}">
+
+  <h3 class="mt-5"> [ no. [[${boardDTO.bno}]] ] detail page</h3>
+    <div class="container mt-5">
+      <div class="row">
+        <!-- Blog entries-->
+        <div class="col-lg-8">
+          <!-- Featured blog post-->
+
+          <div class="card mb-4" >
+            <div class="card-header d-flex ">
+              <h2 class="card-title me-auto p-2">[[${boardDTO.title}]]</h2>
+              <a th:href="/board/modify"></a>
+              <div class="small text-muted p-2">[[${boardDTO.writer}]]</div>
+              <div class="small text-muted p-2">[[${#strings.substring(boardDTO.regDate,0,10)}]]</div>
+            </div>
+            <img class="card-img-top" src="https://dummyimage.com/850x350/dee2e6/6c757d.jpg" alt="..." />
+            <div class="card-body">
+              <p class="card-text">[[${boardDTO.content}]]</p>
+            </div>
+          </div>
+        </div>
+        <!-- right Side widgets-->
+        <div class="col-lg-2">
+          <!-- Categories widget-->
+          <div class="card mb-4">
+            <div class="card-header">카테고리</div>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#!">Web Design</a></li>
+                    <li><a href="#!">HTML</a></li>
+                    <li><a href="#!">Freebies</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6">
+                  <ul class="list-unstyled mb-0">
+                    <li><a href="#!">JavaScript</a></li>
+                    <li><a href="#!">CSS</a></li>
+                    <li><a href="#!">Tutorials</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>

@@ -38,6 +38,7 @@ public class BoardController {
     @GetMapping("/detail")
     public void detail(@RequestParam("bno") long bno, Model model){
         BoardDTO boardDTO = boardService.getDetail(bno);
-        model.addAttribute("boardDTO" , boardDTO);
+        model.addAttribute("board", boardDTO);
+        log.info(">>> board >> {}", boardDTO);
     }
 }
