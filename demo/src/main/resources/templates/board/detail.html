@@ -3,7 +3,7 @@
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
       layout:decorate="~{layout/layout}">
 
-<div layout:fragment="content" class="container-md" th:with="board = ${boardDTO}">
+<div layout:fragment="content" class="container-md" th:with="board = ${board}">
 
   <h3 class="mt-5"> [ no. [[${board.bno}]] ] detail page</h3>
   <form action="/board/modify" method="post" id="modForm" enctype="multipart/form-data">
